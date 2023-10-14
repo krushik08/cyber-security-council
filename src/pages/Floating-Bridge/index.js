@@ -4,7 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 
-function BurjKhalifa() {
+function FloatingBridge() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -58,4 +58,4 @@ function BurjKhalifa() {
   return <>{renderComponent()}</>;
 }
 
-export default BurjKhalifa;
+export default FloatingBridge;

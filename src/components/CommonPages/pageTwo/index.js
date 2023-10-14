@@ -161,16 +161,14 @@ const PageTwo = ({
                     textAlign: 'justify',
                   }}
                 >
-                  {content[location?.pathname]?.content}
                   <ol>
-                    <li>Infiltrate the barcode-based baggage sorting system.</li>
-                  
-<br />
-<li>Target the security protocols of arrival and departure gates.</li>
-<li>Target the security protocols of arrival and departure gates.</li>
-                  
-
-
+                    {content[location?.pathname]?.attacks?.length &&
+                      content[location?.pathname]?.attacks.map((item) => (
+                        <>
+                          <li>{item}</li>
+                          <br />
+                        </>
+                      ))}
                   </ol>
                 </Typography>
               </Stack>

@@ -4,7 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 
-function DeiraCerrkside() {
+function BarakkahNuclearPlant() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -58,4 +58,4 @@ function DeiraCerrkside() {
   return <>{renderComponent()}</>;
 }
 
-export default DeiraCerrkside;
+export default BarakkahNuclearPlant;

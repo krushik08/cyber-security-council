@@ -1,14 +1,44 @@
 {
-  "/burj-khalifa": {
+   "/abu-Dhabi-airport": {
     "name": "Abu Dhabi Airport",
-    "content": "Sector: Aviation / Transport (Critical Sector)."
+    "sector":"Aviation / Transport (Critical Sector)",
+    "attacks":[
+      "Tamper with boarding pass printing kiosks.",
+      "Interfere with baggage security screening system and/or metal detectors.",
+      "Manipulate the airport communication system."
+    ]
   },
-  "/palm-jumeirah": {
-    "name": "Palm Jumeirah",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper eros nunc in justo. Donec pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper"
+  "/dubai-airport": {
+    "name": "Dubai Airport",
+    "sector":"Aviation / Transport (Critical Sector)",
+    "attacks":[
+      "Infiltrate the barcode-based baggage sorting system.",
+      "Target the security protocols of arrival and departure gates."
+    ]
   },
-    "/deira-creekside": {
-    "name": "Deiracreekside",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper eros nunc in justo. Donec pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper"
+  "/floating-bridge": {
+    "name": "Floating bridge",
+    "sector":"Infrastructure / Transport (Critical Sector)",
+    "attacks":[
+      "Disruption of bridge operations and control systems.",
+      "Target the bridge control system during active traffic conditions."
+    ]
+  },
+  "/barakkah-nuclear-plant": {
+    "name": "Barakkah Nuclear Plant",
+    "sector":"Energy / Power Generation (Critical Sector)",
+    "attacks":[
+      "Manipulate the radiation monitoring system, initiating a false leak alarm.",
+      "Alter the speed of the plant turbine leading to overheating and power shutdown.",
+      "Tamper with the power substation grid switch, causing a complete power grid failure for the city."
+    ]
+  },
+  "/museum-of-the-future": {
+    "name": "Museum of the Future",
+    "sector":"Smart Devices & Transportation",
+    "attacks":[
+      "Interfere with the smart locking devices, leading to unauthorized access.",
+      "Poison the data stream of smart car sensors, causing inaccurate information displays."
+    ]
   }
 }
