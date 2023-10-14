@@ -17,6 +17,7 @@ import MuteIcon from '../../../assets/volume-up.png';
 import PlayButton from '../../../assets/mute.png';
 import TooltipComponent from '../../../components/tooltip/tooltip';
 
+
 const PageThree = ({
   currentPage,
   setCurrentPage,

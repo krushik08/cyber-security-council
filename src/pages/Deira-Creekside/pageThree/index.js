@@ -25,7 +25,7 @@ const PageThree = ({
   isPlayAudio,
   setIsPlayAudio,
 }) => {
-  const [selectedToolTip, setSelectedToolTip] = useState('');
+  const [selectedToolTip, setSelectedToolTip] = useState();
   const [open, setOpen] = React.useState(false);
 
   const handleTooltipClose = () => {
@@ -196,11 +196,48 @@ const PageThree = ({
                 />
 
                 <PlusButtonOne>
-                  <TooltipComponent
-                    key={'one'}
-                    selectedToolTip={selectedToolTip}
-                    setSelectedToolTip={setSelectedToolTip}
-                  />
+                  <HtmlTooltip
+                    PopperProps={{
+                      disablePortal: true,
+                    }}
+                    onClose={handleTooltipClose}
+                    open={selectedToolTip === 'one'}
+                    disableFocusListener
+                    disableHoverListener
+                    disableTouchListener
+                    title={
+                      <>
+                        <Box
+                          sx={{
+                            backgroundColor: '#fff',
+                            position: 'absolute',
+                            right: -10,
+                            top: 0,
+                            borderRadius: '50%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                          }}
+                          onClick={() => handleTooltipClose()}
+                        >
+                          <CancelIcon
+                            sx={{
+                              color: 'grey',
+                              fontSize: '32px',
+                            }}
+                          ></CancelIcon>
+                        </Box>
+                        <Typography>
+                          Ut consequat est vitae efficitur gravida. Cras quis
+                          diam egestas, ultricies mi a, bibendum mauris. Fusce
+                          vehicula tellus a purus fermentum, vitae ultricies
+                          diam venenatis. In sed luctus sem, sed placerat orci.
+                          Etiam posuere lobortis malesuada. In eu accumsan elit.
+                          Donec velit quam, condimentum eu felis in, vulputate.
+                        </Typography>
+                      </>
+                    }
+                  ></HtmlTooltip>
                   <AddCircleIcon
                     className={`${
                       selectedToolTip === 'one' ? 'rotedIcon' : ''
@@ -215,11 +252,48 @@ const PageThree = ({
                 </PlusButtonOne>
 
                 <PlusButtonTwo>
-                  <TooltipComponent
-                    key={'two'}
-                    selectedToolTip={selectedToolTip}
-                    setSelectedToolTip={setSelectedToolTip}
-                  />
+                  <HtmlTooltip
+                    PopperProps={{
+                      disablePortal: true,
+                    }}
+                    onClose={handleTooltipClose}
+                    open={selectedToolTip === 'two'}
+                    disableFocusListener
+                    disableHoverListener
+                    disableTouchListener
+                    title={
+                      <>
+                        <Box
+                          sx={{
+                            backgroundColor: '#fff',
+                            position: 'absolute',
+                            right: -10,
+                            top: 0,
+                            borderRadius: '50%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                          }}
+                          onClick={() => handleTooltipClose()}
+                        >
+                          <CancelIcon
+                            sx={{
+                              color: 'grey',
+                              fontSize: '32px',
+                            }}
+                          ></CancelIcon>
+                        </Box>
+                        <Typography>
+                          Ut consequat est vitae efficitur gravida. Cras quis
+                          diam egestas, ultricies mi a, bibendum mauris. Fusce
+                          vehicula tellus a purus fermentum, vitae ultricies
+                          diam venenatis. In sed luctus sem, sed placerat orci.
+                          Etiam posuere lobortis malesuada. In eu accumsan elit.
+                          Donec velit quam, condimentum eu felis in, vulputate.
+                        </Typography>
+                      </>
+                    }
+                  ></HtmlTooltip>
                   <AddCircleIcon
                     className={`${
                       selectedToolTip === 'two' ? 'rotedIcon' : ''
@@ -234,11 +308,48 @@ const PageThree = ({
                 </PlusButtonTwo>
 
                 <PlusButtonThree>
-                  <TooltipComponent
-                    key={'three'}
-                    selectedToolTip={selectedToolTip}
-                    setSelectedToolTip={setSelectedToolTip}
-                  />
+                  <HtmlTooltip
+                    PopperProps={{
+                      disablePortal: true,
+                    }}
+                    onClose={handleTooltipClose}
+                    open={selectedToolTip === 'three'}
+                    disableFocusListener
+                    disableHoverListener
+                    disableTouchListener
+                    title={
+                      <>
+                        <Box
+                          sx={{
+                            backgroundColor: '#fff',
+                            position: 'absolute',
+                            right: -10,
+                            top: 0,
+                            borderRadius: '50%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                          }}
+                          onClick={() => handleTooltipClose()}
+                        >
+                          <CancelIcon
+                            sx={{
+                              color: 'grey',
+                              fontSize: '32px',
+                            }}
+                          ></CancelIcon>
+                        </Box>
+                        <Typography>
+                          Ut consequat est vitae efficitur gravida. Cras quis
+                          diam egestas, ultricies mi a, bibendum mauris. Fusce
+                          vehicula tellus a purus fermentum, vitae ultricies
+                          diam venenatis. In sed luctus sem, sed placerat orci.
+                          Etiam posuere lobortis malesuada. In eu accumsan elit.
+                          Donec velit quam, condimentum eu felis in, vulputate.
+                        </Typography>
+                      </>
+                    }
+                  ></HtmlTooltip>
                   <AddCircleIcon
                     className={`${
                       selectedToolTip === 'three' ? 'rotedIcon' : ''
@@ -253,11 +364,48 @@ const PageThree = ({
                 </PlusButtonThree>
 
                 <PlusButtonFour>
-                  <TooltipComponent
-                    key={'four'}
-                    selectedToolTip={selectedToolTip}
-                    setSelectedToolTip={setSelectedToolTip}
-                  />
+                  <HtmlTooltip
+                    PopperProps={{
+                      disablePortal: true,
+                    }}
+                    onClose={handleTooltipClose}
+                    open={selectedToolTip === 'four'}
+                    disableFocusListener
+                    disableHoverListener
+                    disableTouchListener
+                    title={
+                      <>
+                        <Box
+                          sx={{
+                            backgroundColor: '#fff',
+                            position: 'absolute',
+                            right: -10,
+                            top: 0,
+                            borderRadius: '50%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                          }}
+                          onClick={() => handleTooltipClose()}
+                        >
+                          <CancelIcon
+                            sx={{
+                              color: 'grey',
+                              fontSize: '32px',
+                            }}
+                          ></CancelIcon>
+                        </Box>
+                        <Typography>
+                          Ut consequat est vitae efficitur gravida. Cras quis
+                          diam egestas, ultricies mi a, bibendum mauris. Fusce
+                          vehicula tellus a purus fermentum, vitae ultricies
+                          diam venenatis. In sed luctus sem, sed placerat orci.
+                          Etiam posuere lobortis malesuada. In eu accumsan elit.
+                          Donec velit quam, condimentum eu felis in, vulputate.
+                        </Typography>
+                      </>
+                    }
+                  ></HtmlTooltip>
                   <AddCircleIcon
                     className={`${
                       selectedToolTip === 'four' ? 'rotedIcon' : ''
