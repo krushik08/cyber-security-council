@@ -9,8 +9,11 @@ import ArrowIcon from '../../../assets/arrow.png';
 
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
+import content from '../../../constent';
+import { useLocation } from 'react-router-dom';
 
-const Home = ({ currentPage, setCurrentPage }) => {
+const Home = ({ key, currentPage, setCurrentPage }) => {
+  const location = useLocation();
   const MainWrapper = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 9),
     animation: animations.fadeIn,
@@ -59,7 +62,7 @@ const Home = ({ currentPage, setCurrentPage }) => {
               textTransform: 'capitalize',
             }}
           >
-            Burj Khalifa
+            {content[location?.pathname]?.name}
           </Typography>
 
           <Box

@@ -1,0 +1,14 @@
+{
+  "/burj-khalifa": {
+    "name": "Burj - Khalifa",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper eros nunc in justo. Donec pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper"
+  },
+  "/palm-jumeirah": {
+    "name": "Palm Jumeirah",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper eros nunc in justo. Donec pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper"
+  },
+    "/deira-creekside": {
+    "name": "Deira Creekside",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper eros nunc in justo. Donec pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis leo vel ex scelerisque, nec fringilla dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus faucibus tellus, in varius risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis iaculis erat, non semper"
+  }
+}

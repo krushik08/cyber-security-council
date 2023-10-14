@@ -4,7 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 
-function BurjKhalifa() {
+function PalmJumeirah() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -23,11 +23,7 @@ function BurjKhalifa() {
         return (
           <>
             {pauseAudioFuc()}
-            <Home
-              key={'burjKhalifa'}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-            />
+            <Home currentPage={currentPage} setCurrentPage={setCurrentPage} />
           </>
         );
         break;
@@ -35,7 +31,6 @@ function BurjKhalifa() {
         return (
           <>
             <PageTwo
-              key="burjKhalifa"
               isPlayAudio={isPlayAudio}
               setIsPlayAudio={setIsPlayAudio}
               plyAudioFuc={plyAudioFuc}
@@ -49,7 +44,6 @@ function BurjKhalifa() {
       case 'three':
         return (
           <PageThree
-            key="burjKhalifa"
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
             plyAudioFuc={plyAudioFuc}
@@ -64,4 +58,4 @@ function BurjKhalifa() {
   return <>{renderComponent()}</>;
 }
 
-export default BurjKhalifa;
+export default PalmJumeirah;

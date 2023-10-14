@@ -11,7 +11,9 @@ import MuteIcon from '../../../assets/volume-up.png';
 import PlayButton from '../../../assets/mute.png';
 import BurjImage from '../../../assets/BurjKhalifa.jpg';
 import { animations } from 'react-animation';
+import content from '../../../constent';
 import 'react-animation/dist/keyframes.css';
+import { useLocation } from 'react-router-dom';
 
 const PageTwo = ({
   currentPage,
@@ -21,6 +23,7 @@ const PageTwo = ({
   isPlayAudio,
   setIsPlayAudio,
 }) => {
+  const location = useLocation();
   useEffect(() => {
     plyAudioFuc();
   }, []);
@@ -148,7 +151,7 @@ const PageTwo = ({
             <Grid item md={6} xs={12} sx={{ animation: animations.fadeIn }}>
               <Stack direction="column" spacing={1.5}>
                 <Typography sx={{ fontSize: '32px', fontWeight: 'bold' }}>
-                  Burj Khalifa
+                  {content[location?.pathname]?.name}
                 </Typography>
                 <Typography
                   sx={{
@@ -157,18 +160,7 @@ const PageTwo = ({
                     textAlign: 'justify',
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  iaculis leo vel ex scelerisque, nec fringilla dolor euismod.
-                  Phasellus suscipit ornare sem, ac faucibus nisi dignissim
-                  fringilla. Proin tempus faucibus tellus, in varius risus
-                  dapibus et. Mauris aliquam, diam ut tempor varius, arcu felis
-                  iaculis erat, non semper eros nunc in justo. Donec pretium
-                  sapien tempus imperdiet venenatis. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Morbi iaculis leo vel ex
-                  scelerisque, nec fringilla dolor euismod. Phasellus suscipit
-                  ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus
-                  faucibus tellus, in varius risus dapibus et. Mauris aliquam,
-                  diam ut tempor varius, arcu felis iaculis erat, non semper
+                  {content[location?.pathname]?.content}
                 </Typography>
               </Stack>
             </Grid>
