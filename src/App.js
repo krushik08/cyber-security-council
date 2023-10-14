@@ -12,7 +12,7 @@ import MuseumOfTheFuture from './pages/Museum-Of-The-Future';
 function App() {
   return (
     <Routes>
-      <Route path="*" element={<Navigate to="/burj-khalifa" replace />} />
+      <Route path="*" element={<Navigate to="/dubai-airport" replace />} />
       <Route path="/dubai-airport" element={<DubaiAirport />} />
       <Route path="/abu-Dhabi-airport" element={<AbuDhabiAirport />} />
       <Route path="/floating-bridge" element={<FloatingBridge />} />
