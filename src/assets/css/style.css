@@ -1,10 +1,10 @@
 body {
-    background-color: #1A202C;
+    background-color: #1A202C !important;
     margin: 0;
     padding: 0;
-    color: #fff;
-
-}
+    color: #fff !important;
+        font-family: 'Poppins', sans-serif !important;
+    }
 
 .rotedIcon {
     rotate: 45deg;

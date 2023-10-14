@@ -12,7 +12,18 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
 
-const PageThree = ({ currentPage, setCurrentPage }) => {
+import ArrowIcon from '../../assets/arrow.png';
+import PauseIcon from '../../assets/pause1.png';
+import PlayButton from '../../assets/play-button.png';
+
+const PageThree = ({
+  currentPage,
+  setCurrentPage,
+  plyAudioFuc,
+  pauseAudioFuc,
+  isPlayAudio,
+  setIsPlayAudio,
+}) => {
   const [selectedToolTip, setSelectedToolTip] = useState();
   const [open, setOpen] = React.useState(false);
 
@@ -25,10 +36,14 @@ const PageThree = ({ currentPage, setCurrentPage }) => {
   };
 
   const MainWrapper = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(6, 9),
+    padding: theme.spacing(0, 5),
+    display: 'flex',
+    flexDirection: 'column',
+    height: '98vh',
+
     animation: animations.fadeIn,
     [theme.breakpoints.down('md')]: {
-      padding: theme.spacing(4),
+      padding: theme.spacing(0, 4),
     },
     [theme.breakpoints.down('sm')]: {
       padding: theme.spacing(3),
@@ -47,7 +62,6 @@ const PageThree = ({ currentPage, setCurrentPage }) => {
   }));
 
   const ButtonWrapper = styled(Box)(({ theme }) => ({
-    background: '#FAD02C',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -56,16 +70,26 @@ const PageThree = ({ currentPage, setCurrentPage }) => {
     cursor: 'pointer',
   }));
 
-  const IconLeft = styled(ArrowRightAltIcon)(({ theme }) => ({
-    fontSize: '50px',
-    color: '#000',
+  const IconLeft = styled(Box)(({ theme }) => ({
+    height: '50px',
     rotate: '180deg',
 
     [theme.breakpoints.down('md')]: {
-      fontSize: '40px',
+      height: '40px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '35px',
+      height: '35px',
+    },
+  }));
+
+  const IconAction = styled(Box)(({ theme }) => ({
+    height: '50px',
+
+    [theme.breakpoints.down('md')]: {
+      height: '40px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '35px',
     },
   }));
 
@@ -125,14 +149,35 @@ const PageThree = ({ currentPage, setCurrentPage }) => {
           <MainLogo component="img" src={CSCLogo} />
 
           <Stack direction="row" alignItems="center" gap={2}>
+            <ButtonWrapper>
+              {isPlayAudio ? (
+                <IconAction
+                  component="img"
+                  src={PauseIcon}
+                  onClick={() => {
+                    plyAudioFuc();
+                    setIsPlayAudio(false);
+                  }}
+                />
+              ) : (
+                <IconAction
+                  component="img"
+                  src={PlayButton}
+                  onClick={() => {
+                    pauseAudioFuc();
+                    setIsPlayAudio(true);
+                  }}
+                />
+              )}
+            </ButtonWrapper>
             <ButtonWrapper onClick={() => setCurrentPage('two')}>
               {' '}
-              <IconLeft />{' '}
+              <IconLeft component="img" src={ArrowIcon} />{' '}
             </ButtonWrapper>
           </Stack>
         </Box>
 
-        <Box mt={10} mb={4}>
+        <Box mt={10} mb={4} sx={{ flexGrow: 1 }}>
           <Grid container spacing={4} justifyContent={'center'}>
             <Grid item md={6} xs={12}>
               <Box sx={{ position: 'relative' }}>
@@ -382,8 +427,8 @@ const PageThree = ({ currentPage, setCurrentPage }) => {
             marginTop: ' 80px',
           }}
         >
-          <Box component="img" src={cpxLogo} height="46px" />
-          <Box component="img" src={cyberRangeLogo} height="50px" />
+          <Box component="img" src={cpxLogo} height="30px" />
+          <Box component="img" src={cyberRangeLogo} height="30px" />
         </Box>
       </MainWrapper>
     </>

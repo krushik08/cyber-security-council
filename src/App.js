@@ -6,6 +6,7 @@ import song from './assets/audio/Garden(chosic.com).mp3';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('one');
+  const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
   useEffect(() => {
     renderComponent();
@@ -29,8 +30,11 @@ function App() {
       case 'two':
         return (
           <>
-            {plyAudioFuc()}
             <PageTwo
+              isPlayAudio={isPlayAudio}
+              setIsPlayAudio={setIsPlayAudio}
+              plyAudioFuc={plyAudioFuc}
+              pauseAudioFuc={pauseAudioFuc}
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
             />
@@ -40,6 +44,10 @@ function App() {
       case 'three':
         return (
           <PageThree
+            isPlayAudio={isPlayAudio}
+            setIsPlayAudio={setIsPlayAudio}
+            plyAudioFuc={plyAudioFuc}
+            pauseAudioFuc={pauseAudioFuc}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />

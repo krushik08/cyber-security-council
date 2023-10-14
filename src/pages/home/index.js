@@ -2,10 +2,10 @@ import React from 'react';
 
 import CSCLogo from '../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Stack, Typography, styled } from '@mui/material';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import cpxLogo from '../../assets/cpx-logo.png';
 import cyberRangeLogo from '../../assets/cyberange-logo-v4 copy.png';
+import ArrowIcon from '../../assets/arrow.png';
 
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
@@ -71,12 +71,7 @@ const Home = ({ currentPage, setCurrentPage }) => {
             className="blob"
           >
             {' '}
-            <ArrowRightAltIcon
-              sx={{
-                fontSize: '70px',
-                color: '#000',
-              }}
-            />{' '}
+            <Box component="img" src={ArrowIcon} height="70px" />{' '}
           </Box>
         </Stack>
       </PageWrapper>
@@ -88,8 +83,8 @@ const Home = ({ currentPage, setCurrentPage }) => {
           justifyContent: 'space-between',
         }}
       >
-        <Box component="img" src={cpxLogo} height="46px" />
-        <Box component="img" src={cyberRangeLogo} height="50px" />
+        <Box component="img" src={cpxLogo} height="30px" />
+        <Box component="img" src={cyberRangeLogo} height="30px" />
       </Box>
     </MainWrapper>
   );

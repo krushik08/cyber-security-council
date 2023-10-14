@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import CSCLogo from '../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Grid, Stack, Typography, styled } from '@mui/material';
@@ -6,17 +6,33 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import cpxLogo from '../../assets/cpx-logo.png';
 import cyberRangeLogo from '../../assets/cyberange-logo-v4 copy.png';
+import ArrowIcon from '../../assets/arrow.png';
+import PauseIcon from '../../assets/pause1.png';
+import PlayButton from '../../assets/play-button.png';
 
 import BurjImage from '../../assets/BurjKhalifa.jpg';
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
 
-const PageTwo = ({ currentPage, setCurrentPage }) => {
+const PageTwo = ({
+  currentPage,
+  setCurrentPage,
+  plyAudioFuc,
+  pauseAudioFuc,
+  isPlayAudio,
+  setIsPlayAudio,
+}) => {
+  useEffect(() => {
+    plyAudioFuc();
+  }, []);
   const MainWrapper = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(6, 9),
+    display: 'flex',
+    flexDirection: 'column',
+    height: '98vh',
+    padding: theme.spacing(0, 5),
     animation: animations.fadeIn,
     [theme.breakpoints.down('md')]: {
-      padding: theme.spacing(4),
+      padding: theme.spacing(0, 4),
     },
     [theme.breakpoints.down('sm')]: {
       padding: theme.spacing(3),
@@ -35,37 +51,46 @@ const PageTwo = ({ currentPage, setCurrentPage }) => {
   }));
 
   const ButtonWrapper = styled(Box)(({ theme }) => ({
-    background: '#FAD02C',
+    // background: '#fff',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '50%',
-    padding: '4px',
+    border: '1px solid transparent',
     cursor: 'pointer',
   }));
 
-  const IconLeft = styled(ArrowRightAltIcon)(({ theme }) => ({
-    fontSize: '50px',
-    color: '#000',
+  const IconLeft = styled(Box)(({ theme }) => ({
+    height: '50px',
     rotate: '180deg',
 
     [theme.breakpoints.down('md')]: {
-      fontSize: '40px',
+      height: '40px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '35px',
+      height: '35px',
     },
   }));
 
-  const IconRight = styled(ArrowRightAltIcon)(({ theme }) => ({
-    fontSize: '50px',
-    color: '#000',
+  const IconRight = styled(Box)(({ theme }) => ({
+    height: '50px',
 
     [theme.breakpoints.down('md')]: {
-      fontSize: '40px',
+      height: '40px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '35px',
+      height: '35px',
+    },
+  }));
+
+  const IconAction = styled(Box)(({ theme }) => ({
+    height: '50px',
+
+    [theme.breakpoints.down('md')]: {
+      height: '40px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '35px',
     },
   }));
 
@@ -83,26 +108,54 @@ const PageTwo = ({ currentPage, setCurrentPage }) => {
           <MainLogo component="img" src={CSCLogo} />
 
           <Stack direction="row" alignItems="center" gap={2}>
+            <ButtonWrapper>
+              {isPlayAudio ? (
+                <IconAction
+                  component="img"
+                  src={PauseIcon}
+                  onClick={() => {
+                    plyAudioFuc();
+                    setIsPlayAudio(false);
+                  }}
+                />
+              ) : (
+                <IconAction
+                  component="img"
+                  src={PlayButton}
+                  onClick={() => {
+                    pauseAudioFuc();
+                    setIsPlayAudio(true);
+                  }}
+                />
+              )}
+            </ButtonWrapper>
+
             <ButtonWrapper onClick={() => setCurrentPage('one')}>
               {' '}
-              <IconLeft />{' '}
+              <IconLeft component="img" src={ArrowIcon} />{' '}
             </ButtonWrapper>
 
             <ButtonWrapper onClick={() => setCurrentPage('three')}>
               {' '}
-              <IconRight />{' '}
+              <IconRight component="img" src={ArrowIcon} />
             </ButtonWrapper>
           </Stack>
         </Box>
 
-        <Box mt={10} mb={4}>
-          <Grid container spacing={4}>
+        <Box mt={10} mb={4} sx={{ flexGrow: 1 }}>
+          <Grid container spacing={4} alignItems="center">
             <Grid item md={6} xs={12} sx={{ animation: animations.fadeIn }}>
               <Stack direction="column" spacing={1.5}>
                 <Typography sx={{ fontSize: '32px', fontWeight: 'bold' }}>
                   Burj Khalifa
                 </Typography>
-                <Typography sx={{ fontSize: '18px', fontWeight: 'normal' }}>
+                <Typography
+                  sx={{
+                    fontSize: '16px',
+                    fontWeight: 'normal',
+                    textAlign: 'justify',
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   iaculis leo vel ex scelerisque, nec fringilla dolor euismod.
                   Phasellus suscipit ornare sem, ac faucibus nisi dignissim
@@ -115,21 +168,6 @@ const PageTwo = ({ currentPage, setCurrentPage }) => {
                   ornare sem, ac faucibus nisi dignissim fringilla. Proin tempus
                   faucibus tellus, in varius risus dapibus et. Mauris aliquam,
                   diam ut tempor varius, arcu felis iaculis erat, non semper
-                  eros nunc in justo. Donec pretium sapien tempus imperdiet
-                  venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Morbi iaculis leo vel ex scelerisque, nec fringilla
-                  dolor euismod. Phasellus suscipit ornare sem, ac faucibus nisi
-                  dignissim fringilla. Proin tempus faucibus tellus, in varius
-                  risus dapibus et. Mauris aliquam, diam ut tempor varius, arcu
-                  felis iaculis erat, non semper eros nunc in justo. Donec
-                  pretium sapien tempus imperdiet venenatis. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit. Morbi iaculis leo vel
-                  ex scelerisque, nec fringilla dolor euismod. Phasellus
-                  suscipit ornare sem, ac faucibus nisi dignissim fringilla.
-                  Proin tempus faucibus tellus, in varius risus dapibus et.
-                  Mauris aliquam, diam ut tempor varius, arcu felis iaculis
-                  erat, non semper eros nunc in justo. Donec pretium sapien
-                  tempus imperdiet venenatis.
                 </Typography>
               </Stack>
             </Grid>
@@ -158,8 +196,8 @@ const PageTwo = ({ currentPage, setCurrentPage }) => {
             marginTop: ' 80px',
           }}
         >
-          <Box component="img" src={cpxLogo} height="46px" />
-          <Box component="img" src={cyberRangeLogo} height="50px" />
+          <Box component="img" src={cpxLogo} height="30px" />
+          <Box component="img" src={cyberRangeLogo} height="30px" />
         </Box>
       </MainWrapper>
     </>
