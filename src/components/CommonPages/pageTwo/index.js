@@ -162,6 +162,16 @@ const PageTwo = ({
                   }}
                 >
                   {content[location?.pathname]?.content}
+                  <ol>
+                    <li>Infiltrate the barcode-based baggage sorting system.</li>
+                  
+<br />
+<li>Target the security protocols of arrival and departure gates.</li>
+<li>Target the security protocols of arrival and departure gates.</li>
+                  
+
+
+                  </ol>
                 </Typography>
               </Stack>
             </Grid>
