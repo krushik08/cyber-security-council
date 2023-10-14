@@ -1,5 +1,5 @@
 {
-   "/abu-Dhabi-airport": {
+   "/abu-dhabi-airport": {
     "name": "Abu Dhabi Airport",
     "section":"Aviation / Transport (Critical Sector)",
     "attacks":[
@@ -39,6 +39,226 @@
     "attacks":[
       "Interfere with the smart locking devices, leading to unauthorized access.",
       "Poison the data stream of smart car sensors, causing inaccurate information displays."
+    ]
+  },
+  "/burk-khalifa": {
+    "name": "Burk Khalifa",
+    "section":"Landmarks & Entertainment Systems",
+    "attacks":[
+      "Interfere with the elevator controls of the Burj Khalifa, creating disruptions in its standard operations.",
+      "Manipulate the fountain's controls, causing unplanned movements and potentially ruining the show.",
+      "Tamper with the image projection system on the Burj Khalifa, leading to the display of inappropriate or misleading images."
+    ]
+  },
+   "/dubai-metro": {
+    "name": "Dubai Metro",
+    "section":"Public Transportation Systems",
+    "attacks":[
+      "Tamper with the metro's signalling system, gaining control over carriages and track change mechanisms, leading to potential collisions and accidents.",
+      "Interfere with the communication system (Wi-Fi) of the control center, manipulating the content on display boards."
+    ]
+  },
+   "/dubai-electricity-and-water-authority": {
+    "name": "Dubai Electricity and Water Authority",
+    "section":"Utility Services",
+    "attacks":[
+      "Alter readings on smart water meters, leading to incorrect billing.",
+      "Manipulate smart energy meters, showing false energy consumption data."
+    ]
+  },
+   "/port-of-fujairah": {
+    "name": "Port of Fujairah",
+    "section":"Port and Maritime Operations",
+    "attacks":[
+      "Sabotage of the port gantry system, causing disruption in the alignment and placement of containers.",
+      "Intrusion into the CCTV surveillance system of the port, leading to unauthorized access to sensitive visual data."
+    ]
+  },
+     "/port-of-fujairah-2": {
+    "name": "Port of Fujairah 2",
+    "section":"Port and Maritime Operations",
+    "attacks":[
+      "Rogue entry through the access control gates due to a compromise in the access control system.",
+      "Alteration in the port's operational system leading to a mismanagement in the location and timing of the container drops."
+    ]
+  },
+   "/jebel-ali-sewage-treatment-plant": {
+    "name": "Jebel Ali Sewage Treatment Plant",
+    "section":"Water and Wastewater Management (Sewage Treatment)",
+    "attacks":[
+      "Damage to the control systems leading to equipment malfunction, which in turn disrupts the sewage treatment process.",
+      "Alteration in the operational values resulting in the release of improperly treated sewage."
+    ]
+  },
+   "/stadium": {
+    "name": "Stadium",
+    "section":"Stadiums and Recreational Facilities (Hazza Bin Zayad Stadium)",
+    "attacks":[
+      "Unauthorized access due to vulnerabilities in electronic entry systems.",
+      "Field disruption via manipulation of the irrigation system.",
+      "Display of inappropriate or offensive content on advertising display boards.",
+      "Causing parking chaos by tampering with smart parking systems."
+    ]
+  },
+   "/ADNOC-oil-and-gas": {
+    "name": "ADNOC: Oil and Gas",
+    "section":"Oil and Gas Industry (ADNOC oil and gas sector)",
+    "attacks":[
+      "Tampering with the refinery's pressure system leading to potentially hazardous consequences.",
+      "Interrupting the functionality of oil pumping stations.",
+      "Compromising the integrity of the pipeline's flow control system, leading to potential leaks or supply disruptions."
+    ]
+  },
+    "/emirates-global-aluminum": {
+    "name": "Emirates Global Aluminum",
+    "section":"Metal and Mining Industry (Emirates Global Aluminum)",
+    "attacks":[
+      "Interfering with the rolling mill of the plant, leading to disruptions in the manufacturing process.",
+      "Manipulating the lighting system of the factory to instigate a complete shutdown."
+    ]
+  },
+   "/automated-factory-line-a": {
+    "name": "Automated Factory Line A",
+    "section":"Automated Manufacturing (Automated Factory Line)",
+    "attacks":[
+      "Interference with the AI program controlling Robotic Arm Unit A, resulting in malfunctioning pick-up procedures.",
+      "Tampering with industrial sensors, triggering false alarms and causing a disruption in the manufacturing process."
+    ]
+  },
+   "/automated-factory-line-b": {
+    "name": "Automated Factory Line B",
+    "section":"Manufacturing and Automation",
+    "attacks":[
+      "Interference with the AI program of the Robotic Arm Unit B leading to improper sorting on the conveyor belt.",
+      "Compromising the precision of the Robotic Arm Unit B, causing a direct hardware malfunction."
+    ]
+  },
+   "/salik": {
+    "name": "SALIK",
+    "section":"Transportation and Infrastructure",
+    "attacks":[
+      "Cloning of RFID to exploit the automated toll collection system, allowing unauthorized free passage.",
+      "Breaching the toll gate's database, causing false alarms and potential security responses."
+    ]
+  },
+   "/cleveland-hospital": {
+    "name": "Cleveland Hospital",
+    "section":"Healthcare and Medical Services",
+    "attacks":[
+      "Infiltration of the hospital network, granting unauthorized access to sensitive patient records.",
+      "Disruption of the hospital's fire alarm sensors, either rendering them inactive or producing false alarms.",
+      "Malicious takeover of surgical robotic arms, leading to unintended actions during medical procedures."
+    ]
+  },
+     "/agriculture-tech-park": {
+    "name": "Agriculture Tech Park",
+    "section":"Food Production and Storage",
+    "attacks":[
+      "Manipulation of the HVAC system in food storage facilities, causing temperatures to rise or drop significantly, which can severely affect food quality and safety."
+    ]
+  },
+     "/solar-park": {
+    "name": "Solar Park",
+    "section":"Solar Energy Production",
+    "attacks":[
+      "Interference with the motors controlling the solar panels' tracking system, preventing them from correctly aligning with the sun and significantly decreasing the energy collection."
+    ]
+  },
+     "/hospitality-industry": {
+    "name": "Hospitality Industry",
+    "section":"Hospitality Industry (Hotel Infrastructure and Security)",
+    "attacks":[
+      "Breaching guest data to track VIP movements and potentially compromise their safety.",
+      "Manipulating the conference room booking system to show false occupancy.",
+      "Exploiting RFID vulnerabilities to gain unauthorized room access and potentially commit theft."
+    ]
+  },
+      "/smart-warehouse": {
+    "name": "Smart Warehouse",
+    "section":"Retail Infrastructure (Smart Store Systems)",
+    "attacks":[
+      "Breaching smart shelf systems to disrupt object movement and generate incorrect reports.",
+      "Tampering with robotic systems causing them to make mistakes in item retrieval.",
+      "Altering the digital displays to show incorrect product prices, leading to customer confusion and potential revenue loss."
+    ]
+  },
+       "/amusement-park": {
+    "name": "Amusement Park",
+    "section":"Amusement Infrastructure (Theme Park Systems)",
+    "attacks":[
+      "Hacking into the control system of a ferris wheel, altering its speed and making it operate at unsafe levels."
+    ]
+  },
+       "/dubai-mall": {
+    "name": "Dubai Mall",
+    "section":"Shopping Mall Infrastructure",
+    "attacks":[
+      "Disruption in the functionality of the mall's elevators, leading to safety concerns and chaos.",
+      "Interference with the Building Management System (BMS) lighting, potentially plunging areas into darkness."
+    ]
+  },
+        "/difc": {
+    "name": "DIFC",
+    "section":"Banking and Financial Systems",
+    "attacks":[
+      "Malfunction in the ATM system leading to unauthorized cash dispense, causing financial loss to the bank.",
+      "Use of a 'Rubber Ducky' device to instigate a malware attack, potentially compromising bank systems and data integrity."
+    ]
+  },
+        "/green-energy-park": {
+    "name": "Green Energy Park",
+    "section":"Smart Homes",
+    "attacks":[
+      "Breach in the security of smart home systems, leading to unauthorized control over lighting, curtains, and temperature settings, causing discomfort and potential danger to the occupants."
+    ]  
+  },
+        "/du-data-center": {
+    "name": "DU Data Center",
+    "section":"Data Centres",
+    "attacks":[
+      "Targeted malware or a direct cyber attack against the data centre's HVAC control system, which results in overheating of the servers due to the cooling system's malfunction."
+    ]
+  },
+        "/smart-police-station": {
+    "name": "Smart Police Station",
+    "section":"Security and Surveillance Systems",
+    "attacks":[
+      "Cyber attackers gain unauthorized access to the surveillance system, erasing or altering stored footage, compromising the integrity of evidence.",
+      "An attack on the AI algorithms that guide robotic patrol dogs, causing them to either falsely identify a non-threat as a threat or miss an actual threat."
+    ]
+  },
+        "/smart-zoo": {
+    "name": "Smart Zoo",
+    "section":"Zoological Facilities and Animal Care",
+    "attacks":[
+      "Tampering with the zoo's life support systems which ensures the survival of specific birds and aquatic animals.",
+      "Interfering with the automated feeder systems, affecting the nourishment of the animals."
+    ]
+  },
+          "/space-center": {
+    "name": "Space Center",
+    "section":"Space and Aerospace Industry",
+    "attacks":[
+      "Interfering with the Bottle Engine Test Apparatus (BETA) system which NASA uses for training purposes.",
+      "Tampering with communication lines using Software Defined Radio (SDR) to intercept crucial communication data."
+    ]
+  },
+          "/sharjah-museum": {
+    "name": "Sharjah Museum",
+    "section":"Museum and Cultural Heritage",
+     "attacks":[
+      "**Interactive Displays**: Utilizing augmented reality (AR) and virtual reality (VR), Sharjah Museum offers visitors an immersive experience, allowing them to delve deep into historical events, art installations, and cultural exhibits.",
+      "**Digital Archiving and Preservation**: The museum employs advanced 3D scanning and digital archiving methods to meticulously preserve artifacts. This digital cataloging ensures longevity, accessibility, and provides an option for virtual tours and online exhibitions.",
+      "**AI-Powered Guided Tours**: Personalized, AI-driven audio guides adapt to visitors' preferences, offering curated information on exhibits of interest. These guides use machine learning to adjust their narratives based on visitor feedback, ensuring a continually evolving and tailored experience."
+    ]
+  },
+         "/palm-jumeriah": {
+    "name": "Palm Jumeriah",
+    "section":"Real Estate and Tourism",
+     "attacks":[
+      "**Sustainable Infrastructure**: Palm Jumeirah has adopted eco-friendly technologies like sustainable water desalination, energy-efficient transportation, and green building standards to reduce its ecological footprint and promote sustainable luxury.",
+      "**Smart Home Systems**: Many residences on the Palm are equipped with state-of-the-art home automation systems, allowing homeowners to control lighting, temperature, security, and other features through voice commands or mobile apps.",
+      "**Digital Tourism and Hospitality**: Leading hotels on the Palm Jumeirah offer guests tech-driven amenities like virtual concierges, AR-based city guides, and contactless check-ins, enhancing the guest experience through digital integration."
     ]
   }
 }
