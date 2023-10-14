@@ -14,6 +14,14 @@ body {
     transform: scale(2);
     animation: pulse-black 2s infinite;
 }
+.textContent {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* line-height: 1; */
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
 
 @keyframes pulse-black {
     0% {

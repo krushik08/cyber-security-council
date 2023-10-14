@@ -153,7 +153,7 @@ const PageThree = ({
           <MainLogo component="img" src={CSCLogo} />
 
           <Stack direction="row" alignItems="center" gap={2}>
-            <ButtonWrapper>
+            {/* <ButtonWrapper>
               {isPlayAudio ? (
                 <IconAction
                   component="img"
@@ -173,7 +173,7 @@ const PageThree = ({
                   }}
                 />
               )}
-            </ButtonWrapper>
+            </ButtonWrapper> */}
             <ButtonWrapper onClick={() => setCurrentPage('two')}>
               {' '}
               <IconLeft component="img" src={ArrowIcon} />{' '}

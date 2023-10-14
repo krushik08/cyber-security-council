@@ -27,14 +27,9 @@ const PageThree = ({
   setIsPlayAudio,
 }) => {
   const [selectedToolTip, setSelectedToolTip] = useState();
-  const [open, setOpen] = React.useState(false);
 
   const handleTooltipClose = () => {
     setSelectedToolTip();
-  };
-
-  const handleTooltipOpen = () => {
-    setOpen(true);
   };
 
   const MainWrapper = styled(Box)(({ theme }) => ({
@@ -154,7 +149,7 @@ const PageThree = ({
           <MainLogo component="img" src={CSCLogo} />
 
           <Stack direction="row" alignItems="center" gap={2}>
-            <ButtonWrapper>
+            {/* <ButtonWrapper>
               {isPlayAudio ? (
                 <IconAction
                   component="img"
@@ -174,7 +169,7 @@ const PageThree = ({
                   }}
                 />
               )}
-            </ButtonWrapper>
+            </ButtonWrapper> */}
             <ButtonWrapper onClick={() => setCurrentPage('two')}>
               {' '}
               <IconLeft component="img" src={ArrowIcon} />{' '}
@@ -192,7 +187,7 @@ const PageThree = ({
                   width="100%"
                   sx={{
                     borderRadius: '12px',
-                    animation: animations.popIn,
+                    // animation: animations.popIn,
                   }}
                 />
 

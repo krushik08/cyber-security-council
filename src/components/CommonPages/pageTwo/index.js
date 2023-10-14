@@ -24,9 +24,9 @@ const PageTwo = ({
   setIsPlayAudio,
 }) => {
   const location = useLocation();
-  useEffect(() => {
-    plyAudioFuc();
-  }, []);
+  // useEffect(() => {
+  //   // plyAudioFuc();
+  // }, []);
   const MainWrapper = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
@@ -112,7 +112,7 @@ const PageTwo = ({
           <MainLogo component="img" src={CSCLogo} />
 
           <Stack direction="row" alignItems="center" gap={2}>
-            <ButtonWrapper>
+            {/* <ButtonWrapper>
               {isPlayAudio ? (
                 <IconAction
                   component="img"
@@ -132,7 +132,7 @@ const PageTwo = ({
                   }}
                 />
               )}
-            </ButtonWrapper>
+            </ButtonWrapper> */}
 
             <ButtonWrapper onClick={() => setCurrentPage('one')}>
               {' '}
@@ -154,6 +154,7 @@ const PageTwo = ({
                   {content[location?.pathname]?.name}
                 </Typography>
                 <Typography
+                  className="textContent"
                   sx={{
                     fontSize: '16px',
                     fontWeight: 'normal',
