@@ -1,11 +1,11 @@
 import React from 'react';
 
-import CSCLogo from '../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
+import CSCLogo from '../../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Stack, Typography, styled } from '@mui/material';
 
-import cpxLogo from '../../assets/cpx-logo.png';
-import cyberRangeLogo from '../../assets/cyberange-logo-v4 copy.png';
-import ArrowIcon from '../../assets/arrow.png';
+import cpxLogo from '../../../assets/cpx-logo.png';
+import cyberRangeLogo from '../../../assets/cyberange-logo-v4 copy.png';
+import ArrowIcon from '../../../assets/arrow.png';
 
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
@@ -52,7 +52,12 @@ const Home = ({ currentPage, setCurrentPage }) => {
 
         <Stack direction="column" alignItems="center" m={'auto'} gap={2}>
           <Typography
-            sx={{ fontSize: '35px', fontWeight: 'bold', color: '#FFF' }}
+            sx={{
+              fontSize: '35px',
+              fontWeight: 'bold',
+              color: '#FFF',
+              textTransform: 'capitalize',
+            }}
           >
             Burj Khalifa
           </Typography>

@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 
-import CSCLogo from '../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
+import CSCLogo from '../../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Grid, Stack, Typography, styled } from '@mui/material';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import cpxLogo from '../../assets/cpx-logo.png';
-import cyberRangeLogo from '../../assets/cyberange-logo-v4 copy.png';
+import cpxLogo from '../../../assets/cpx-logo.png';
+import cyberRangeLogo from '../../../assets/cyberange-logo-v4 copy.png';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import BurjImage from '../../assets/BurjKhalifa.jpg';
+import BurjImage from '../../../assets/BurjKhalifa.jpg';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import CancelIcon from '@mui/icons-material/Cancel';
 import { animations } from 'react-animation';
 import 'react-animation/dist/keyframes.css';
 
-import ArrowIcon from '../../assets/arrow.png';
-import PauseIcon from '../../assets/pause1.png';
-import PlayButton from '../../assets/play-button.png';
+import ArrowIcon from '../../../assets/arrow.png';
+import MuteIcon from '../../../assets/volume-up.png';
+import PlayButton from '../../../assets/mute.png';
 
 const PageThree = ({
   currentPage,
@@ -63,6 +63,9 @@ const PageThree = ({
 
   const ButtonWrapper = styled(Box)(({ theme }) => ({
     display: 'flex',
+    // background: '#fff',
+    // width: '36px',
+    // height: '26px',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '50%',
@@ -153,7 +156,7 @@ const PageThree = ({
               {isPlayAudio ? (
                 <IconAction
                   component="img"
-                  src={PauseIcon}
+                  src={PlayButton}
                   onClick={() => {
                     plyAudioFuc();
                     setIsPlayAudio(false);
@@ -162,7 +165,7 @@ const PageThree = ({
               ) : (
                 <IconAction
                   component="img"
-                  src={PlayButton}
+                  src={MuteIcon}
                   onClick={() => {
                     pauseAudioFuc();
                     setIsPlayAudio(true);
@@ -424,7 +427,7 @@ const PageThree = ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            marginTop: ' 80px',
+            marginTop: '45px',
           }}
         >
           <Box component="img" src={cpxLogo} height="30px" />
