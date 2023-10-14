@@ -161,6 +161,7 @@ const PageTwo = ({
                     textAlign: 'justify',
                   }}
                 >
+                  Sector: {content[location?.pathname]?.section}
                   <ol>
                     {content[location?.pathname]?.attacks?.length &&
                       content[location?.pathname]?.attacks.map((item) => (

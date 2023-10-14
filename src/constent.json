@@ -1,7 +1,7 @@
 {
    "/abu-Dhabi-airport": {
     "name": "Abu Dhabi Airport",
-    "sector":"Aviation / Transport (Critical Sector)",
+    "section":"Aviation / Transport (Critical Sector)",
     "attacks":[
       "Tamper with boarding pass printing kiosks.",
       "Interfere with baggage security screening system and/or metal detectors.",
@@ -10,7 +10,7 @@
   },
   "/dubai-airport": {
     "name": "Dubai Airport",
-    "sector":"Aviation / Transport (Critical Sector)",
+    "section":"Aviation / Transport (Critical Sector)",
     "attacks":[
       "Infiltrate the barcode-based baggage sorting system.",
       "Target the security protocols of arrival and departure gates."
@@ -18,7 +18,7 @@
   },
   "/floating-bridge": {
     "name": "Floating bridge",
-    "sector":"Infrastructure / Transport (Critical Sector)",
+    "section":"Infrastructure / Transport (Critical Sector)",
     "attacks":[
       "Disruption of bridge operations and control systems.",
       "Target the bridge control system during active traffic conditions."
@@ -26,7 +26,7 @@
   },
   "/barakkah-nuclear-plant": {
     "name": "Barakkah Nuclear Plant",
-    "sector":"Energy / Power Generation (Critical Sector)",
+    "section":"Energy / Power Generation (Critical Sector)",
     "attacks":[
       "Manipulate the radiation monitoring system, initiating a false leak alarm.",
       "Alter the speed of the plant turbine leading to overheating and power shutdown.",
@@ -35,7 +35,7 @@
   },
   "/museum-of-the-future": {
     "name": "Museum of the Future",
-    "sector":"Smart Devices & Transportation",
+    "section":"Smart Devices & Transportation",
     "attacks":[
       "Interfere with the smart locking devices, leading to unauthorized access.",
       "Poison the data stream of smart car sensors, causing inaccurate information displays."
