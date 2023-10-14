@@ -27,7 +27,6 @@ const PageThree = ({
 }) => {
   const [selectedToolTip, setSelectedToolTip] = useState();
   const [initialAnimation, setInitialAnimation] = useState(true);
-  const [open, setOpen] = React.useState(false);
   useEffect(() => {
     setTimeout(() => {
       setInitialAnimation(false);
@@ -35,10 +34,6 @@ const PageThree = ({
   }, []);
   const handleTooltipClose = () => {
     setSelectedToolTip();
-  };
-
-  const handleTooltipOpen = () => {
-    setOpen(true);
   };
 
   const MainWrapper = styled(Box)(({ theme }) => ({

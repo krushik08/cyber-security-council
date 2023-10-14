@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import CSCLogo from '../../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Grid, Stack, Typography, styled } from '@mui/material';
@@ -26,23 +26,23 @@ const PageThree = ({
   setIsPlayAudio,
 }) => {
   const [selectedToolTip, setSelectedToolTip] = useState();
-  const [open, setOpen] = React.useState(false);
+  const [initialAnimation, setInitialAnimation] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setInitialAnimation(false);
+    }, 200);
+  }, []);
 
   const handleTooltipClose = () => {
     setSelectedToolTip();
   };
-
-  const handleTooltipOpen = () => {
-    setOpen(true);
-  };
-
   const MainWrapper = styled(Box)(({ theme }) => ({
     padding: theme.spacing(0, 5),
     display: 'flex',
     flexDirection: 'column',
     height: '98vh',
 
-    animation: animations.fadeIn,
+    // animation: animations.fadeIn,
     [theme.breakpoints.down('md')]: {
       padding: theme.spacing(0, 4),
     },
@@ -191,7 +191,7 @@ const PageThree = ({
                   width="100%"
                   sx={{
                     borderRadius: '12px',
-                    animation: animations.popIn,
+                    animation: initialAnimation && animations.popIn,
                   }}
                 />
 
