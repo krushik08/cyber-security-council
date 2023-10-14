@@ -1,12 +1,8 @@
-import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
-import BurjKhalifa from './pages/Floating-Bridge';
-import { useEffect } from 'react';
-import PalmJumeirah from './pages/Museum-Of-The-Future';
-import DeiraCerrkside from './pages/Barakkah-Nuclear-Plant';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import AbuDhabiAirport from './pages/Abu-Dhabi-Airport';
+import BarakkahNuclearPlant from './pages/Barakkah-Nuclear-Plant';
 import DubaiAirport from './pages/Dubai-Airport';
 import FloatingBridge from './pages/Floating-Bridge';
-import BarakkahNuclearPlant from './pages/Barakkah-Nuclear-Plant';
 import MuseumOfTheFuture from './pages/Museum-Of-The-Future';
 
 function App() {
