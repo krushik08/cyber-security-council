@@ -1,21 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import CSCLogo from '../../../assets/CYBER-SECURITY-COUNCIL-LOGO-1.png';
 import { Box, Grid, Stack, Typography, styled } from '@mui/material';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-
 import cpxLogo from '../../../assets/cpx-logo.png';
 import cyberRangeLogo from '../../../assets/cyberange-logo-v4 copy.png';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import CancelIcon from '@mui/icons-material/Cancel';
+import { animations } from 'react-animation';
+import 'react-animation/dist/keyframes.css';
+
 import ArrowIcon from '../../../assets/arrow.png';
 import MuteIcon from '../../../assets/volume-up.png';
 import PlayButton from '../../../assets/mute.png';
+import TooltipComponent from '../../../components/tooltip/tooltip';
 
-import { animations } from 'react-animation';
-import content from '../../../constent';
-import 'react-animation/dist/keyframes.css';
-import { useLocation } from 'react-router-dom';
-
-const PageTwo = ({
+const Iframe = ({
   currentPage,
   setCurrentPage,
   plyAudioFuc,
@@ -24,16 +26,24 @@ const PageTwo = ({
   setIsPlayAudio,
   imageURl,
 }) => {
-  const location = useLocation();
-  // useEffect(() => {
-  //   // plyAudioFuc();
-  // }, []);
+  const [selectedToolTip, setSelectedToolTip] = useState();
+  const [initialAnimation, setInitialAnimation] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setInitialAnimation(false);
+    }, 200);
+  }, []);
+  const handleTooltipClose = () => {
+    setSelectedToolTip();
+  };
+
   const MainWrapper = styled(Box)(({ theme }) => ({
+    padding: theme.spacing(0, 5),
     display: 'flex',
     flexDirection: 'column',
     height: '98vh',
-    padding: theme.spacing(0, 5),
-    animation: animations.fadeIn,
+
+    // animation: animations.fadeIn,
     [theme.breakpoints.down('md')]: {
       padding: theme.spacing(0, 4),
     },
@@ -54,31 +64,20 @@ const PageTwo = ({
   }));
 
   const ButtonWrapper = styled(Box)(({ theme }) => ({
-    // background: '#fff',
     display: 'flex',
+    // background: '#fff',
     // width: '36px',
     // height: '26px',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '50%',
-    border: '1px solid transparent',
+    padding: '4px',
     cursor: 'pointer',
   }));
 
   const IconLeft = styled(Box)(({ theme }) => ({
     height: '50px',
     rotate: '180deg',
-
-    [theme.breakpoints.down('md')]: {
-      height: '40px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '35px',
-    },
-  }));
-
-  const IconRight = styled(Box)(({ theme }) => ({
-    height: '50px',
 
     [theme.breakpoints.down('md')]: {
       height: '40px',
@@ -99,9 +98,51 @@ const PageTwo = ({
     },
   }));
 
+  const PlusButtonOne = styled(Box)(({ theme }) => ({
+    width: '100%',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '23%',
+    left: '48%',
+  }));
+  const PlusButtonTwo = styled(Box)(({ theme }) => ({
+    width: '100%',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '70%',
+    left: '43.5%',
+  }));
+  const PlusButtonThree = styled(Box)(({ theme }) => ({
+    width: '100%',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '75%',
+    left: '22%',
+  }));
+  const PlusButtonFour = styled(Box)(({ theme }) => ({
+    width: '100%',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '80%',
+    left: '72%',
+  }));
+
+  const HtmlTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#f5f5f9',
+      color: 'rgba(0, 0, 0, 0.87)',
+      maxWidth: 300,
+      border: '1px solid #dadde9',
+      borderRadius: '12px',
+      padding: '12px',
+    },
+  }));
+
   return (
     <>
-      <MainWrapper>
+      <MainWrapper sx={{ overflowX: 'hidden' }}>
         <Box
           sx={{
             width: '100%',
@@ -134,57 +175,27 @@ const PageTwo = ({
                 />
               )}
             </ButtonWrapper> */}
-
-            <ButtonWrapper onClick={() => setCurrentPage('one')}>
+            <ButtonWrapper onClick={() => setCurrentPage('two')}>
               {' '}
               <IconLeft component="img" src={ArrowIcon} />{' '}
-            </ButtonWrapper>
-
-            <ButtonWrapper onClick={() => setCurrentPage('three')}>
-              {' '}
-              <IconRight component="img" src={ArrowIcon} />
             </ButtonWrapper>
           </Stack>
         </Box>
 
         <Box mt={10} mb={4} sx={{ flexGrow: 1 }}>
-          <Grid container spacing={4} alignItems="center">
-            <Grid item md={6} xs={12} sx={{ animation: animations.fadeIn }}>
-              <Stack direction="column" spacing={1.5}>
-                <Typography sx={{ fontSize: '32px', fontWeight: 'bold ' }}>
-                  {content[location?.pathname]?.name}
-                </Typography>
-                <Typography
-                  className="textContent"
-                  sx={{
-                    fontSize: '16px',
-                    fontWeight: 'normal',
-                    textAlign: 'justify',
-                  }}
-                >
-                  Sector: {content[location?.pathname]?.section}
-                  <ol>
-                    {content[location?.pathname]?.attacks?.length &&
-                      content[location?.pathname]?.attacks.map((item) => (
-                        <>
-                          <li>{item}</li>
-                          <br />
-                        </>
-                      ))}
-                  </ol>
-                </Typography>
-              </Stack>
-            </Grid>
-
-            <Grid item md={6} xs={12}>
-              <Box>
+          <Grid container spacing={4} justifyContent={'center'}>
+            <Grid item md={8} xs={12}>
+              <Box sx={{ position: 'relative' }}>
                 <Box
-                  component="img"
-                  src={imageURl}
-                  width="100%"
+                  component="iframe"
+                  src={'http://localhost:1880/ui/#!/'}
+                  width={'100%'}
+                  height={'67vh'}
+                  //   width="1100px"
+                  //   height="650px"
                   sx={{
                     borderRadius: '12px',
-                    animation: animations.popIn,
+                    animation: initialAnimation && animations.popIn,
                   }}
                 />
               </Box>
@@ -208,4 +219,4 @@ const PageTwo = ({
   );
 };
 
-export default PageTwo;
+export default Iframe;

@@ -4,6 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 import imageURl from '../../assets/images/BurjKhalifa.jpg';
+import Iframe from '../../components/CommonPages/iframe/iframe';
 
 function BurkKhalifa() {
   const [currentPage, setCurrentPage] = useState('one');
@@ -45,7 +46,7 @@ function BurkKhalifa() {
         break;
       case 'three':
         return (
-          <PageThree
+          <Iframe
             imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}

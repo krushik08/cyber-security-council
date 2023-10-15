@@ -4,6 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 import imageURl from '../../assets/images/dubai-electricity-and-water-authority.jpg';
+import Iframe from '../../components/CommonPages/iframe/iframe';
 
 function DubaiElectricityAndWaterAuthority() {
   const [currentPage, setCurrentPage] = useState('one');
@@ -45,7 +46,7 @@ function DubaiElectricityAndWaterAuthority() {
         break;
       case 'three':
         return (
-          <PageThree
+          <Iframe
             imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}

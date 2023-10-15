@@ -45,7 +45,7 @@ function GreenEnergyPark() {
         break;
       case 'three':
         return (
-          <PageThree
+          <Iframe
             imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}

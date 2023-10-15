@@ -4,6 +4,7 @@ import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
 import image from '../../assets/images/hospitality-industry.jpg';
+import Iframe from '../../components/CommonPages/iframe/iframe';
 
 function HospitalityIndustry() {
   const [currentPage, setCurrentPage] = useState('one');
@@ -45,7 +46,7 @@ function HospitalityIndustry() {
         break;
       case 'three':
         return (
-          <PageThree
+          <Iframe
             imageURl={image}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
