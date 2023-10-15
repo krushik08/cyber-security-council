@@ -31,6 +31,7 @@ import HospitalityIndustry from './pages/Hospitality-Industry';
 import SmartZoo from './pages/Smart-Zoo';
 import SharjahMuseum from './pages/Sharjah-Museum';
 
+
 function App() {
   return (
     <Routes>
