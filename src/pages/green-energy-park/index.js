@@ -32,13 +32,13 @@ function GreenEnergyPark() {
         return (
           <>
             <PageTwo
+              imageURl={imageURl}
               isPlayAudio={isPlayAudio}
               setIsPlayAudio={setIsPlayAudio}
               plyAudioFuc={plyAudioFuc}
               pauseAudioFuc={pauseAudioFuc}
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
-              imageURl={imageURl}
             />
           </>
         );

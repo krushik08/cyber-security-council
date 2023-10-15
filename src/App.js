@@ -19,7 +19,6 @@ import SmartWarehouse from './pages/Smart-Warehouse';
 import AmusementPark from './pages/Amusement-Park';
 import DubaiMall from './pages/Dubai-Mall';
 import DIFC from './pages/DIFC';
-// import GreenEnergyPark from './pages/Green-energy-park';
 import DuDataCenter from './pages/Du-Data-Center';
 import SmartPoliceStation from './pages/Smart-Police-Station';
 import SpaceCenter from './pages/space-center';
@@ -30,7 +29,7 @@ import JebelAliSewageTreatmentPlant from './pages/Jebel-Ali-Sewage-Treatment-Pla
 import HospitalityIndustry from './pages/Hospitality-Industry';
 import SmartZoo from './pages/Smart-Zoo';
 import SharjahMuseum from './pages/Sharjah-Museum';
-
+import GreenEnergyPark from './pages/Green-energy-park';
 
 function App() {
   return (
@@ -77,7 +76,7 @@ function App() {
       <Route path="/amusement-park" element={<AmusementPark />} />
       <Route path="/dubai-mall" element={<DubaiMall />} />
       <Route path="/difc" element={<DIFC />} />
-      {/* <Route path="/green-energy-park" element={<GreenEnergyPark />} /> */}
+      <Route path="/green-energy-park" element={<GreenEnergyPark />} />
       <Route path="/du-data-center" element={<DuDataCenter />} />
       <Route path="/smart-police-station" element={<SmartPoliceStation />} />
       <Route path="/smart-zoo" element={<SmartZoo />} />
