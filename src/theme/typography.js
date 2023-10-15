@@ -1,5 +1,6 @@
 const baseProperties = {
-  fontFamily: 'Poppins, sans-serif',
+  fontFamily: 'Poppins',
+  fontWeight: 800,
 };
 
 const typography = {

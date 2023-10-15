@@ -1,14 +1,19 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background-color: #1A202C !important;
     margin: 0;
     padding: 0;
     color: #fff !important;
-        font-family: 'Poppins', sans-serif !important;
+        /* font-family: 'Poppins', sans-serif !important; */
     }
 
 .rotedIcon {
     rotate: 45deg;
-    
 }
 
 .blob {

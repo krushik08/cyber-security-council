@@ -57,7 +57,7 @@ const Home = ({ key, currentPage, setCurrentPage }) => {
           <Typography
             sx={{
               fontSize: '35px',
-              fontWeight: 'bold',
+              fontWeight: 'bold !important',
               color: '#FFF',
               textTransform: 'capitalize',
             }}

@@ -150,7 +150,7 @@ const PageTwo = ({
           <Grid container spacing={4} alignItems="center">
             <Grid item md={6} xs={12} sx={{ animation: animations.fadeIn }}>
               <Stack direction="column" spacing={1.5}>
-                <Typography sx={{ fontSize: '32px', fontWeight: 'bold' }}>
+                <Typography sx={{ fontSize: '32px', fontWeight: 'bold ' }}>
                   {content[location?.pathname]?.name}
                 </Typography>
                 <Typography
