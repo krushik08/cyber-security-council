@@ -29,7 +29,7 @@ import JebelAliSewageTreatmentPlant from './pages/Jebel-Ali-Sewage-Treatment-Pla
 import HospitalityIndustry from './pages/Hospitality-Industry';
 import SmartZoo from './pages/Smart-Zoo';
 import SharjahMuseum from './pages/Sharjah-Museum';
-// import GreenEnergyPark from './pages/Green-energy-park';
+import GreenEnergyPark from './pages/Green-energy-park';
 
 function App() {
   return (
@@ -76,7 +76,7 @@ function App() {
       <Route path="/amusement-park" element={<AmusementPark />} />
       <Route path="/dubai-mall" element={<DubaiMall />} />
       <Route path="/difc" element={<DIFC />} />
-      {/* <Route path="/green-energy-park" element={<GreenEnergyPark />} /> */}
+      <Route path="/green-energy-park" element={<GreenEnergyPark />} />
       <Route path="/du-data-center" element={<DuDataCenter />} />
       <Route path="/smart-police-station" element={<SmartPoliceStation />} />
       <Route path="/smart-zoo" element={<SmartZoo />} />
