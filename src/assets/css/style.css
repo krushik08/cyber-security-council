@@ -9,9 +9,12 @@ body {
     margin: 0;
     padding: 0;
     color: #fff !important;
+    /* touch-action: none; */
         /* font-family: 'Poppins', sans-serif !important; */
     }
-
+.imageContent {
+    touch-action: none;
+}
 .rotedIcon {
     rotate: 45deg;
 }
@@ -25,7 +28,7 @@ body {
     text-overflow: ellipsis;
     display: -webkit-box;
     /* line-height: 1; */
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 16;
     -webkit-box-orient: vertical;
 }
 
@@ -49,11 +52,14 @@ body {
 ol {
     list-style: none;
     counter-reset: my-awesome-counter;
+    margin-left: 40px;
   }
   li {
+    list-style-position: inherit;
     counter-increment: my-awesome-counter;
     margin: 0.25rem;
     font-size: 18px;
+    /* display: table-row; */
   }
   li::before {
     content: counter(my-awesome-counter);
@@ -68,4 +74,5 @@ ol {
     margin-right: 0.5rem;
     font-weight: 600;
     font-size: 18px;
+    margin-left: -70px;
   }
