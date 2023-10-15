@@ -184,13 +184,13 @@ const Iframe = ({
 
         <Box mt={10} mb={4} sx={{ flexGrow: 1 }}>
           <Grid container spacing={4} justifyContent={'center'}>
-            <Grid item md={8} xs={12}>
+            <Grid item md={12} xs={12}>
               <Box sx={{ position: 'relative' }}>
                 <Box
                   component="iframe"
                   src={'http://localhost:1880/ui/#!/'}
                   width={'100%'}
-                  height={'67vh'}
+                  height={'62vh'}
                   //   width="1100px"
                   //   height="650px"
                   sx={{
