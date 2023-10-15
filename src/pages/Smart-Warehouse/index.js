@@ -3,6 +3,7 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
+import imageURl from '../../assets/images/smart-warehouse.jpeg';
 
 function SmartWarehouse() {
   const [currentPage, setCurrentPage] = useState('one');
@@ -31,6 +32,7 @@ function SmartWarehouse() {
         return (
           <>
             <PageTwo
+              imageURl={imageURl}
               isPlayAudio={isPlayAudio}
               setIsPlayAudio={setIsPlayAudio}
               plyAudioFuc={plyAudioFuc}
@@ -44,6 +46,7 @@ function SmartWarehouse() {
       case 'three':
         return (
           <PageThree
+            imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
             plyAudioFuc={plyAudioFuc}

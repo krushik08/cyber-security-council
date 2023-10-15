@@ -3,8 +3,9 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
+import imageURl from '../../assets/images/jebel-ali-sewage-treatment-plant.JPG';
 
-function jebelAliSewageTreatmentPlant() {
+function JebelAliSewageTreatmentPlant() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -31,6 +32,7 @@ function jebelAliSewageTreatmentPlant() {
         return (
           <>
             <PageTwo
+              imageURl={imageURl}
               isPlayAudio={isPlayAudio}
               setIsPlayAudio={setIsPlayAudio}
               plyAudioFuc={plyAudioFuc}
@@ -44,6 +46,7 @@ function jebelAliSewageTreatmentPlant() {
       case 'three':
         return (
           <PageThree
+            imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
             plyAudioFuc={plyAudioFuc}
@@ -58,4 +61,5 @@ function jebelAliSewageTreatmentPlant() {
   return <>{renderComponent()}</>;
 }
 
-export default jebelAliSewageTreatmentPlant;
+export default JebelAliSewageTreatmentPlant;
+

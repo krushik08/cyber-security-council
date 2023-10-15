@@ -3,6 +3,7 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
+import imageURl from '../../assets/images/green-energy-park.jpg';
 
 function GreenEnergyPark() {
   const [currentPage, setCurrentPage] = useState('one');
@@ -37,6 +38,7 @@ function GreenEnergyPark() {
               pauseAudioFuc={pauseAudioFuc}
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
+              imageURl={imageURl}
             />
           </>
         );
@@ -44,6 +46,7 @@ function GreenEnergyPark() {
       case 'three':
         return (
           <PageThree
+            imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
             plyAudioFuc={plyAudioFuc}

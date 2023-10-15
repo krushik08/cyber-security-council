@@ -9,7 +9,7 @@ import cyberRangeLogo from '../../../assets/cyberange-logo-v4 copy.png';
 import ArrowIcon from '../../../assets/arrow.png';
 import MuteIcon from '../../../assets/volume-up.png';
 import PlayButton from '../../../assets/mute.png';
-import BurjImage from '../../../assets/BurjKhalifa.jpg';
+
 import { animations } from 'react-animation';
 import content from '../../../constent';
 import 'react-animation/dist/keyframes.css';
@@ -22,6 +22,7 @@ const PageTwo = ({
   pauseAudioFuc,
   isPlayAudio,
   setIsPlayAudio,
+  imageURl,
 }) => {
   const location = useLocation();
   // useEffect(() => {
@@ -139,10 +140,10 @@ const PageTwo = ({
               <IconLeft component="img" src={ArrowIcon} />{' '}
             </ButtonWrapper>
 
-            <ButtonWrapper onClick={() => setCurrentPage('three')}>
+            {/* <ButtonWrapper onClick={() => setCurrentPage('three')}>
               {' '}
               <IconRight component="img" src={ArrowIcon} />
-            </ButtonWrapper>
+            </ButtonWrapper> */}
           </Stack>
         </Box>
 
@@ -179,7 +180,7 @@ const PageTwo = ({
               <Box>
                 <Box
                   component="img"
-                  src={BurjImage}
+                  src={imageURl}
                   width="100%"
                   sx={{
                     borderRadius: '12px',

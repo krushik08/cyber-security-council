@@ -3,8 +3,9 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
+import imageURl from '../../assets/images/smart-zoo.jpg';
 
-function AbuDhabiAirport() {
+function SmartZoo() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -31,6 +32,7 @@ function AbuDhabiAirport() {
         return (
           <>
             <PageTwo
+              imageURl={imageURl}
               isPlayAudio={isPlayAudio}
               setIsPlayAudio={setIsPlayAudio}
               plyAudioFuc={plyAudioFuc}
@@ -44,6 +46,7 @@ function AbuDhabiAirport() {
       case 'three':
         return (
           <PageThree
+            imageURl={imageURl}
             isPlayAudio={isPlayAudio}
             setIsPlayAudio={setIsPlayAudio}
             plyAudioFuc={plyAudioFuc}
@@ -58,4 +61,4 @@ function AbuDhabiAirport() {
   return <>{renderComponent()}</>;
 }
 
-export default AbuDhabiAirport;
+export default SmartZoo;

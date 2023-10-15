@@ -6,7 +6,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import cpxLogo from '../../../assets/cpx-logo.png';
 import cyberRangeLogo from '../../../assets/cyberange-logo-v4 copy.png';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import BurjImage from '../../../assets/BurjKhalifa.jpg';
+
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import CancelIcon from '@mui/icons-material/Cancel';
 import { animations } from 'react-animation';
@@ -24,6 +24,7 @@ const PageThree = ({
   pauseAudioFuc,
   isPlayAudio,
   setIsPlayAudio,
+  imageURl,
 }) => {
   const [selectedToolTip, setSelectedToolTip] = useState();
   const [initialAnimation, setInitialAnimation] = useState(true);
@@ -187,7 +188,7 @@ const PageThree = ({
               <Box sx={{ position: 'relative' }}>
                 <Box
                   component="img"
-                  src={BurjImage}
+                  src={imageURl}
                   width="100%"
                   sx={{
                     borderRadius: '12px',
