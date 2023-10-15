@@ -29,7 +29,7 @@ import JebelAliSewageTreatmentPlant from './pages/Jebel-Ali-Sewage-Treatment-Pla
 import HospitalityIndustry from './pages/Hospitality-Industry';
 import SmartZoo from './pages/Smart-Zoo';
 import SharjahMuseum from './pages/Sharjah-Museum';
-import GreenEnergyPark from './pages/Green-energy-park';
+import GreenEnergyPark from './pages/green-energy-park';
 
 function App() {
   return (
