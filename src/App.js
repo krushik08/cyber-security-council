@@ -4,7 +4,7 @@ import BarakkahNuclearPlant from './pages/Barakkah-Nuclear-Plant';
 import DubaiAirport from './pages/Dubai-Airport';
 import FloatingBridge from './pages/Floating-Bridge';
 import MuseumOfTheFuture from './pages/Museum-Of-The-Future';
-import BurkKhalifa from './pages/Burk-Khalifa';
+import BurjKhalifa from './pages/Burj-Khalifa';
 import PortOfFujairah from './pages/Port-Of-Fujairah';
 import Stadium from './pages/Stadium';
 import ADNOCOilAndGas from './pages/ADNOC-Oil-And-Gas';
@@ -43,7 +43,7 @@ function App() {
         element={<BarakkahNuclearPlant />}
       />
       <Route path="/museum-of-the-future" element={<MuseumOfTheFuture />} />
-      <Route path="/burk-khalifa" element={<BurkKhalifa />} />
+      <Route path="/burj-khalifa" element={<BurjKhalifa />} />
       <Route
         path="/dubai-electricity-and-water-authority"
         element={<DubaiElectricityAndWaterAuthority />}

@@ -6,7 +6,7 @@ import song from '../../assets/audio/Garden(chosic.com).mp3';
 import imageURl from '../../assets/images/BurjKhalifa.jpg';
 import Iframe from '../../components/CommonPages/iframe/iframe';
 
-function BurkKhalifa() {
+function BurjKhalifa() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -62,4 +62,4 @@ function BurkKhalifa() {
   return <>{renderComponent()}</>;
 }
 
-export default BurkKhalifa;
+export default BurjKhalifa;

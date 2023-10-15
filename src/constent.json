@@ -41,8 +41,8 @@
       "Poison the data stream of smart car sensors, causing inaccurate information displays."
     ]
   },
-  "/burk-khalifa": {
-    "name": "Burk Khalifa",
+  "/burj-khalifa": {
+    "name": "Burj Khalifa",
     "section":"Landmarks & Entertainment Systems",
     "attacks":[
       "Interfere with the elevator controls of the Burj Khalifa, creating disruptions in its standard operations.",
