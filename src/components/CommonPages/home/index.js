@@ -91,8 +91,8 @@ const Home = ({ key, currentPage, setCurrentPage }) => {
           justifyContent: 'space-between',
         }}
       >
-        <Box component="img" src={cpxLogo} height="30px" />
-        <Box component="img" src={cyberRangeLogo} height="30px" />
+        {/* <Box component="img" src={cpxLogo} height="30px" />
+        <Box component="img" src={cyberRangeLogo} height="30px" /> */}
       </Box>
     </MainWrapper>
   );
