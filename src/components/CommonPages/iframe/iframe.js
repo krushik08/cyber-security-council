@@ -211,8 +211,8 @@ const Iframe = ({
             marginTop: '45px',
           }}
         >
-          {/* <Box component="img" src={cpxLogo} height="30px" />
-          <Box component="img" src={cyberRangeLogo} height="30px" /> */}
+          {/* <Box component="img" src={cpxLogo} height="30px" /> */}
+          <Box component="img" src={cyberRangeLogo} height="30px" />
         </Box>
       </MainWrapper>
     </>
