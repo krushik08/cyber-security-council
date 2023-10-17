@@ -206,7 +206,7 @@
     ]
   },
         "/smart-home": {
-    "name": "Smart Home Park",
+    "name": "Smart Home ",
     "section":"Smart Homes",
     "attacks":[
       "Breach in the security of smart home systems, leading to unauthorized control over lighting, curtains, and temperature settings, causing discomfort and potential danger to the occupants."
