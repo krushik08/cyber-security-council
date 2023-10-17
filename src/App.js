@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AbuDhabiAirport from './pages/Abu-Dhabi-Airport';
-import BarakkahNuclearPlant from './pages/Barakkah-Nuclear-Plant';
+import BarakahNuclearPlant from './pages/Barakah-Nuclear-Plant';
 import DubaiAirport from './pages/Dubai-Airport';
 import FloatingBridge from './pages/Floating-Bridge';
 import MuseumOfTheFuture from './pages/Museum-Of-The-Future';
@@ -29,7 +29,7 @@ import JebelAliSewageTreatmentPlant from './pages/Jebel-Ali-Sewage-Treatment-Pla
 import HospitalityIndustry from './pages/Hospitality-Industry';
 import SmartZoo from './pages/Smart-Zoo';
 import SharjahMuseum from './pages/Sharjah-Museum';
-import GreenEnergyPark from './pages/green-energy-park';
+import SmartHome from './pages/smart-home';
 
 function App() {
   return (
@@ -38,10 +38,7 @@ function App() {
       <Route path="/dubai-airport" element={<DubaiAirport />} />
       <Route path="/abu-dhabi-airport" element={<AbuDhabiAirport />} />
       <Route path="/floating-bridge" element={<FloatingBridge />} />
-      <Route
-        path="/barakkah-nuclear-plant"
-        element={<BarakkahNuclearPlant />}
-      />
+      <Route path="/barakah-nuclear-plant" element={<BarakahNuclearPlant />} />
       <Route path="/museum-of-the-future" element={<MuseumOfTheFuture />} />
       <Route path="/burj-khalifa" element={<BurjKhalifa />} />
       <Route
@@ -76,7 +73,7 @@ function App() {
       <Route path="/amusement-park" element={<AmusementPark />} />
       <Route path="/dubai-mall" element={<DubaiMall />} />
       <Route path="/difc" element={<DIFC />} />
-      <Route path="/green-energy-park" element={<GreenEnergyPark />} />
+      <Route path="/smart-home" element={<SmartHome />} />
       <Route path="/du-data-center" element={<DuDataCenter />} />
       <Route path="/smart-police-station" element={<SmartPoliceStation />} />
       <Route path="/smart-zoo" element={<SmartZoo />} />

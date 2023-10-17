@@ -3,11 +3,10 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
-import imageURl from '../../assets/images/green-energy-park.jpg';
+import imageURl from '../../assets/images/smart-home.jpg';
 import Iframe from '../../components/CommonPages/iframe/iframe';
 
-
-function GreenEnergyPark() {
+function SmartHome() {
   const [currentPage, setCurrentPage] = useState('one');
   const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [playAudio, setPlayAudio] = useState(new Audio(song));
@@ -63,4 +62,4 @@ function GreenEnergyPark() {
   return <>{renderComponent()}</>;
 }
 
-export default GreenEnergyPark;
+export default SmartHome;

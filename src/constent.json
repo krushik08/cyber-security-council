@@ -24,8 +24,8 @@
       "Target the bridge control system during active traffic conditions."
     ]
   },
-  "/barakkah-nuclear-plant": {
-    "name": "Barakkah Nuclear Plant",
+  "/barakah-nuclear-plant": {
+    "name": "Barakah Nuclear Plant",
     "section":"Energy / Power Generation (Critical Sector)",
     "attacks":[
       "Manipulate the radiation monitoring system, initiating a false leak alarm.",
@@ -205,8 +205,8 @@
       "Use of a 'Rubber Ducky' device to instigate a malware attack, potentially compromising bank systems and data integrity."
     ]
   },
-        "/green-energy-park": {
-    "name": "Green Energy Park",
+        "/smart-home": {
+    "name": "Smart Home Park",
     "section":"Smart Homes",
     "attacks":[
       "Breach in the security of smart home systems, leading to unauthorized control over lighting, curtains, and temperature settings, causing discomfort and potential danger to the occupants."
