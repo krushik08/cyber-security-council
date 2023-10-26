@@ -3,7 +3,7 @@ import Home from '../../components/CommonPages/home';
 import PageThree from './pageThree';
 import PageTwo from '../../components/CommonPages/pageTwo';
 import song from '../../assets/audio/Garden(chosic.com).mp3';
-import imageURl from '../../assets/images/barakah-nuclear-plant.jpg';
+import imageURl from '../../assets/images/NuclearPowerPlant.jpeg';
 import Iframe from '../../components/CommonPages/iframe/iframe';
 
 function BarakahNuclearPlant() {
