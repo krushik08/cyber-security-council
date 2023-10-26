@@ -34,11 +34,11 @@ import SmartHome from './pages/smart-home';
 function App() {
   return (
     <Routes>
-      <Route path="*" element={<Navigate to="/dubai-airport" replace />} />
+      <Route path="*" element={<Navigate to="/nuclear-plant" replace />} />
       <Route path="/dubai-airport" element={<DubaiAirport />} />
       <Route path="/abu-dhabi-airport" element={<AbuDhabiAirport />} />
       <Route path="/floating-bridge" element={<FloatingBridge />} />
-      <Route path="/barakah-nuclear-plant" element={<BarakahNuclearPlant />} />
+      <Route path="/nuclear-plant" element={<BarakahNuclearPlant />} />
       <Route path="/museum-of-the-future" element={<MuseumOfTheFuture />} />
       <Route path="/burj-khalifa" element={<BurjKhalifa />} />
       <Route

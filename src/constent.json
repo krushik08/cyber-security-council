@@ -24,8 +24,8 @@
       "Target the bridge control system during active traffic conditions."
     ]
   },
-  "/barakah-nuclear-plant": {
-    "name": "Barakah Nuclear Plant",
+  "/nuclear-plant": {
+    "name": "Nuclear Plant",
     "section":"Energy / Power Generation (Critical Sector)",
     "attacks":[
       "Manipulate the radiation monitoring system, initiating a false leak alarm.",
